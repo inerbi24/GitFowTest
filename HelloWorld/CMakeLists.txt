@@ -7,4 +7,5 @@ target_sources(HelloWorld
 
 install(
 	TARGETS HelloWorld
+	RUNTIME	DESTINATION bin
 )
