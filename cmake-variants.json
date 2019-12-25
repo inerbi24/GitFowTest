@@ -1,0 +1,53 @@
+{
+    "buildType": {
+    "default": "Debug",
+        "choices": { 
+            "Debug": {
+                "short": "Debug",
+                "long": "Emit Debug",
+                "buildType": "Debug"
+            },
+            "Release": {
+                "short": "Release",
+                "long": "Emit Release",
+                "buildType": "Release"
+            },
+            "MinSizeRel": {
+                "short": "MinSizeRel",
+                "long": "Emit Minimum Size Release",
+                "buildType": "MinSizeRel"
+            },
+            "RelWithDebInfo": {
+                "short": "RelWithDebInfo",
+                "long": "Emit Release With Debug Information",
+                "buildType": "RelWithDebInfo"
+            }    
+        }
+    },
+    "toolchain": {
+        "default": "mobis",
+        "choices": {
+            "mobis": {
+                "short": "mobis",
+                "long": "Use mobis toolchain",
+                "settings": {
+                    "TOOLCHAIN" : "mobis"
+                }
+            },
+            "lge": {
+                "short": "lge",
+                "long": "Use lge toolchain",
+                "settings": {
+                    "TOOLCHAIN" : "lge"
+                }
+            },
+            "vs2017": {
+                "short": "vs2017",
+                "long": "Use vs2017 toolchain",
+                "settings": {
+                    "TOOLCHAIN" : "vs2017"
+                }
+            }
+        }
+    }
+}
